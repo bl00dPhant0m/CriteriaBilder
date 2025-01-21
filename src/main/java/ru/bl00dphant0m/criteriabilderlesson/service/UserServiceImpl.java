@@ -3,7 +3,7 @@ package ru.bl00dphant0m.criteriabilderlesson.service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import ru.bl00dphant0m.criteriabilderlesson.model.User;
-import ru.bl00dphant0m.criteriabilderlesson.repository.UserRepository;
+import ru.bl00dphant0m.criteriabilderlesson.repository.user.UserRepository;
 
 import java.util.List;
 

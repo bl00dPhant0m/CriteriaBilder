@@ -1,9 +1,11 @@
 package ru.bl00dphant0m.criteriabilderlesson.model;
 
 import jakarta.persistence.*;
-import jdk.jfr.Enabled;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -15,5 +17,8 @@ public class User {
     private int id;
     private String username;
     private int age;
+
+    @OneToMany(mappedBy = "user")
+    private List<Post> posts = new ArrayList<>();
 
 }
